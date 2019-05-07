@@ -1,0 +1,15 @@
+//
+//  XBQH.pch
+//  XBQH
+//
+//  Created by yinju on 2019/4/16.
+//  Copyright © 2019 yinju. All rights reserved.
+//
+
+#ifndef XBQH_h
+#define XBQH_h
+
+#import "ImportHeader.h"
+#import "OtherSetting.h"
+
+#endif /* XBQH_h */

@@ -1,0 +1,22 @@
+target 'WBFriendDemo' do
+pod 'AVOSCloud'
+pod 'TYPagerController' #多个菜单使用,超出屏幕宽度
+pod 'AFNetworking'
+pod 'YYModel'
+pod 'YYWebImage'
+pod 'MBProgressHUD'
+pod 'IQKeyboardManager'
+pod 'MJRefresh'
+pod 'MJExtension'
+pod 'SDWebImage'
+pod 'SDWebImage/GIF'
+pod 'AVOSCloud'               # 数据存储、短信、云引擎调用等基础服务模块
+pod 'YYWebImage'
+pod 'YYCache'
+pod 'XWHUDManager'            #菊花提醒封装
+pod 'BlocksKit'
+pod 'TZImagePickerController' #图片选择器
+pod 'Masonry'
+end
+
+

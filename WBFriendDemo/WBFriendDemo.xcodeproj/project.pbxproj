@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		452608809F458B8BE4FA7EFB /* libPods-WBFriendDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEF26645F6D328985714667 /* libPods-WBFriendDemo.a */; };
 		E8C6F213228164A8008FB8A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C6F212228164A8008FB8A0 /* Assets.xcassets */; };
 		E8C6F216228164A8008FB8A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C6F214228164A8008FB8A0 /* LaunchScreen.storyboard */; };
 		E8C6F219228164A8008FB8A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C6F218228164A8008FB8A0 /* main.m */; };
@@ -94,6 +95,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EEF26645F6D328985714667 /* libPods-WBFriendDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WBFriendDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ADBA0265EC06E91DBBD47C4 /* Pods-WBFriendDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBFriendDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WBFriendDemo/Pods-WBFriendDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8A194A13A894F6D8451BFE61 /* Pods-WBFriendDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBFriendDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBFriendDemo/Pods-WBFriendDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E8C6F206228164A7008FB8A0 /* WBFriendDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBFriendDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C6F212228164A8008FB8A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8C6F215228164A8008FB8A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452608809F458B8BE4FA7EFB /* libPods-WBFriendDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C86C862ED617E8B110AB239 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EEF26645F6D328985714667 /* libPods-WBFriendDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4CEFE88F915D0A0D091EDE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A194A13A894F6D8451BFE61 /* Pods-WBFriendDemo.debug.xcconfig */,
+				3ADBA0265EC06E91DBBD47C4 /* Pods-WBFriendDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E8C6F1FD228164A7008FB8A0 = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +282,8 @@
 				E8C6F221228164A8008FB8A0 /* WBFriendDemoTests */,
 				E8C6F22C228164A8008FB8A0 /* WBFriendDemoUITests */,
 				E8C6F207228164A7008FB8A0 /* Products */,
+				D4CEFE88F915D0A0D091EDE5 /* Pods */,
+				9C86C862ED617E8B110AB239 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -654,9 +678,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8C6F232228164A8008FB8A0 /* Build configuration list for PBXNativeTarget "WBFriendDemo" */;
 			buildPhases = (
+				3445AC7222E06C5C870F93E1 /* [CP] Check Pods Manifest.lock */,
 				E8C6F202228164A7008FB8A0 /* Sources */,
 				E8C6F203228164A7008FB8A0 /* Frameworks */,
 				E8C6F204228164A7008FB8A0 /* Resources */,
+				8AA34B83BC9088A31E7966EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -777,6 +803,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3445AC7222E06C5C870F93E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WBFriendDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AA34B83BC9088A31E7966EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WBFriendDemo/Pods-WBFriendDemo-resources.sh",
+				"${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/XWHUDManager/XWHUDManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AVOSCloud_Art.inc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/XWHUDManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WBFriendDemo/Pods-WBFriendDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8C6F202228164A7008FB8A0 /* Sources */ = {
@@ -999,6 +1080,7 @@
 		};
 		E8C6F233228164A8008FB8A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A194A13A894F6D8451BFE61 /* Pods-WBFriendDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1016,6 +1098,7 @@
 		};
 		E8C6F234228164A8008FB8A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ADBA0265EC06E91DBBD47C4 /* Pods-WBFriendDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

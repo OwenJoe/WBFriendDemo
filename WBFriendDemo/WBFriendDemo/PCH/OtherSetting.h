@@ -51,12 +51,10 @@
 #define JPushKey  @"ed6168cdc86900802e9c5ff2"
 
 //leanCloud 数据服务
-#define  ApplicationIdKey @"W0jQRrjxdrLUA8Yr3NjrQBLK-gzGzoHsz"
-#define  ClientKey @"GDSy5IVRHudiyEDovvQECIyh"
+#define  ApplicationIdKey @"GmTQLucRsyuwAjbbNWXe41S5-gzGzoHsz"
+#define  ClientKey @"mDkJERuHB3pIHHIVm6MTPxrJ"
 
-//版本
-#define VersionName  @"CheckVersion"
-#define VersionID    @"5cac0799a91c93158a35bb8a"
+
 
 //未选中色调
 #define UnSelectColor   @"#FCDD8D"
